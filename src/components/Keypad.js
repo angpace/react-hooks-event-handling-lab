@@ -1,8 +1,17 @@
-// Code Keypad Component Here
+import EyesOnMe from "./EyesOnMe";
 
 function Keypad (){
+    function handleChange(event){
+        console.log("Entering password...")
+        console.log (
+            event.target.value
+        )
+
+    }
     return (
-        <div></div>
+        <div>
+            <input type="password" onChange={handleChange} />
+        </div>
     )
 }
 
